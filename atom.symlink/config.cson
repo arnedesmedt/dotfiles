@@ -1,11 +1,12 @@
 "*":
   core:
+    autoHideMenuBar: true
+    automaticallyUpdate: false
     disabledPackages: [
       "background-tips"
       "exception-reporting"
       "metrics"
     ]
-    followSymlinks: false
     hideGitIgnoredFiles: true
     ignoredNames: [
       ".bundle"
@@ -16,14 +17,16 @@
       "vendor"
     ]
     themes: [
-      "unity-ui"
-      "glacier-syntax"
+      "atom-dark-ui"
+      "monokai"
     ]
   editor:
-    fontFamily: "Menlo"
+    fontFamily: "Courier New"
+    fontSize: 10
     invisibles: {}
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
+    tabLength: 4
   "go-plus":
     goPath: "/Users/holman/Code/go"
   "release-notes":
@@ -37,3 +40,6 @@
     ]
   welcome:
     showOnStartup: false
+".diff.source":
+  editor:
+    tabLength: 4
