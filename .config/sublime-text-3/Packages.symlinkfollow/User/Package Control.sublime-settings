@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"Git",
+		"JSX",
 		"Package Control",
 		"PHP Getters and Setters",
 		"SFTP",
