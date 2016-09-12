@@ -4,3 +4,4 @@ git/gitconfig.local.symlink
 #sublime
 .config/sublime-text-3/Local.symlinkfollow/Auto Save Session.sublime_session
 .config/sublime-text-3/Local.symlinkfollow/Session.sublime_session
+.config/sublime-text-3/Packages.symlinkfollow/User/Package Control.cache

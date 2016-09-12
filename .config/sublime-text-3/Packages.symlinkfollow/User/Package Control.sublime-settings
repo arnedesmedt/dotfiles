@@ -5,6 +5,7 @@
 	],
 	"installed_packages":
 	[
+		"Auto Refresh",
 		"Git",
 		"JSX",
 		"Package Control",
