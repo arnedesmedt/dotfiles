@@ -2,15 +2,11 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"0_package_control_loader"
 	],
 	"installed_packages":
 	[
-		"Browser Refresh",
 		"Git",
-		"JSX",
-		"Package Control",
-		"PHP Getters and Setters",
-		"SFTP",
-		"TypeScript"
+		"Package Control"
 	]
 }
