@@ -5,7 +5,6 @@
 	],
 	"installed_packages":
 	[
-		"Colorsublime",
 		"Function Name Display",
 		"Git",
 		"Material Theme",
@@ -14,6 +13,7 @@
 		"ProjectManager",
 		"SublimeLinter",
 		"SublimeLinter-php",
+		"TrailingSpaces",
 		"zz File Icons"
 	]
 }
