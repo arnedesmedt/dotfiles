@@ -60,7 +60,7 @@ link_file () {
     if [ "$overwrite_all" == "false" ] && [ "$backup_all" == "false" ] && [ "$skip_all" == "false" ]
     then
 
-      local currentSrc="$(readlink $dst)"
+      local currentSrc="$(readlink "$dst")"
 
       if [ "$currentSrc" == "$src" ]
       then
@@ -131,16 +131,23 @@ install_dotfiles () {
   # Search in the dotfiles codebase for .symlinkfollow folders but not in the .git folder
   find -H "$DOTFILES_ROOT" -name '*.symlinkfollow' -not -path '*.git*' | while read src;
   do
-    path=$(dirname "${src%.*}")
-    path=${path/$DOTFILES_ROOT/}
-    path=${path:1:${#path}-1}
-    dst="$HOME/$path/$(basename "${src%.*}")"
-    link_file "$src" "$dst"
+    if [ -d "$src" ]
+    then
+      path=$(dirname "${src%.*}")
+      path=${path/$DOTFILES_ROOT/}
+      path=${path:1:${#path}-1}
+      dst="$HOME/$path/$(basename "${src%.*}")"
+      link_file "$src" "$dst"
+    else 
+      fail "symlinkfollow is not a directory for '$src'"
+    fi
+    
   done
 
   # Search in the dotfiles codebase for .symlink files but not in the .git folder
-  for src in $(find -H "$DOTFILES_ROOT" -name '*.symlink' -not -path '*.git*')
+  for src in $(find -H "$DOTFILES_ROOT" -name '*.symlink' -not -path '*.git/*')
   do
+    # echo $src
     dst="$HOME/$(basename "${src%.*}")"
     link_file "$src" "$dst"
   done
