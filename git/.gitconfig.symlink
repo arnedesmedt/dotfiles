@@ -4,8 +4,6 @@
 [hub]
         protocol = https
 [alias]
-        co = checkout
-        st = status
         cm = commit -m
 [color]
         diff = auto
