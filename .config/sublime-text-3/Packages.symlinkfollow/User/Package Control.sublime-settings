@@ -5,6 +5,8 @@
 	],
 	"installed_packages":
 	[
+		"AdvancedNewFile",
+		"Auto Hide Sidebar",
 		"Function Name Display",
 		"Git",
 		"Material Theme",
@@ -13,6 +15,7 @@
 		"ProjectManager",
 		"SublimeLinter",
 		"SublimeLinter-php",
+		"SyncedSideBar",
 		"TrailingSpaces",
 		"zz File Icons"
 	]
