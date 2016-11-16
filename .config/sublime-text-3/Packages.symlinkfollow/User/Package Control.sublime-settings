@@ -7,6 +7,8 @@
 	"installed_packages":
 	[
 		"Git",
-		"Package Control"
+		"Material Theme",
+		"Package Control",
+		"zz File Icons"
 	]
 }
