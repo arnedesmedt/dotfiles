@@ -1,9 +1,10 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
 	"font_size": 12,
 	"ignored_packages":
 	[
 		"0_package_control_loader",
 		"Vintage"
-	]
+	],
+	"theme": "Material-Theme.sublime-theme"
 }
