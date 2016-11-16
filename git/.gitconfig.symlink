@@ -5,10 +5,8 @@
         protocol = https
 [alias]
         co = checkout
-        promote = !$ZSH/bin/git-promote
-        wtf     = !$ZSH/bin/git-wtf
-        rank-contributors = !$ZSH/bin/git-rank-contributors
-        count   = !git shortlog -sn
+        st = status
+        cm = commit -m
 [color]
         diff = auto
         status = auto
@@ -16,11 +14,15 @@
         ui = true
 [core]
         excludesfile = ~/.gitignore
-        editor = vim
+        editor = subl
+        autocrlf = input
 [apply]
         whitespace = nowarn
 [mergetool]
         keepBackup = false
+[merge]
+        ff = only
+        tool = meld
 [difftool]
         prompt = false
 [help]
@@ -30,4 +32,4 @@
         # for more information on different options of the below setting.
         #
         # Setting to git 2.0 default to suppress warning message
-        default = simple
+        default = current
