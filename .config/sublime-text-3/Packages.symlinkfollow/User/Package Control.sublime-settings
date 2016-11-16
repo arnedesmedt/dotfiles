@@ -9,6 +9,8 @@
 		"Material Theme",
 		"Package Control",
 		"ProjectManager",
+		"SublimeLinter",
+		"SublimeLinter-php",
 		"zz File Icons"
 	]
 }
