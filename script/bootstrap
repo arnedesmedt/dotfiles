@@ -128,6 +128,7 @@ install_dotfiles () {
 
   local overwrite_all=false backup_all=false skip_all=false
 
+  # Search in the dotfiles codebase for .symlinkfollow folders but not in the .git folder
   find -H "$DOTFILES_ROOT" -name '*.symlinkfollow' -not -path '*.git*' | while read src;
   do
     path=$(dirname "${src%.*}")
@@ -137,6 +138,7 @@ install_dotfiles () {
     link_file "$src" "$dst"
   done
 
+  # Search in the dotfiles codebase for .symlink files but not in the .git folder
   for src in $(find -H "$DOTFILES_ROOT" -name '*.symlink' -not -path '*.git*')
   do
     dst="$HOME/$(basename "${src%.*}")"
