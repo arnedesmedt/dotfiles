@@ -49,7 +49,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vagrant bower composer npm django autojump common-aliases git-extras web-search docker sudo postgres pip screen)
+plugins=(git vagrant bower composer npm django autojump common-aliases git-extras web-search docker sudo postgres pip screen laravel)
 
 # User configuration
 
