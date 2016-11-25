@@ -49,7 +49,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vagrant bower composer npm django autojump common-aliases git-extras web-search docker sudo postgres pip screen laravel)
+plugins=(git vagrant bower composer npm django autojump common-aliases git-extras web-search docker sudo postgres pip screen laravel5)
 
 # User configuration
 
@@ -82,17 +82,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-#workspaces
-
-#aliasses
-alias wsol='cd ~/workspace/schoolonline'
-alias waws='cd ~/workspace/aws'
-alias vdfu='vagrant destroy --force; vagrant up'
-alias sshint='~/workspace/aws/aws_scripts/ssh 10.20.51.6'
-alias sshprd='~/workspace/aws/aws_scripts/ssh 10.20.1.100'
-alias sshacc='~/workspace/aws/aws_scripts/ssh 10.20.1.45'
-
-# ssh
-eval `ssh-agent -s`
-ssh-add ~/.ssh/id_rsa_aws
