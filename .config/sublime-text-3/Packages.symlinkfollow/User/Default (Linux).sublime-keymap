@@ -1,14 +1,20 @@
 [
-    { "keys": ["ctrl+alt+w"], "command": "close_all" },
-    {
-        "keys": ["ctrl+alt+s"],
-        "command": "browser_refresh",
-        "args": {
-            "auto_save": true,
-            "delay": 0.1,
-            "activate": false,
-            "browsers" : ["chrome"]
-        }
-    },
-    { "keys": ["ctrl+alt+n"], "command": "project_manager", "args": {"action": "new"}}
+    { "keys": ["ctrl+shift+a"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+    { "keys": ["ctrl+shift+n"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+    { "keys": ["ctrl+shift+alt+n"], "command": "goto_symbol_in_project" },
+    
+    { "keys": ["ctrl+b"], "command": "goto_definition" },
+    { "keys": ["ctrl+alt+left"], "command": "jump_back" },
+    { "keys": ["ctrl+alt+right"], "command": "jump_forward" },
+
+    { "keys": ["ctrl+y"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+    { "keys": ["ctrl+w"], "command": "expand_selection", "args": {"to": "scope"} },
+    { "keys": ["ctrl+d"], "command": "duplicate_line" },
+    { "keys": ["alt+j"], "command": "find_under_expand" },
+
+
+    { "keys": ["f11"], "command": "toggle_bookmark" },
+
+    { "keys": ["ctrl+f3"], "command": "show_panel", "args": {"panel": "find", "reverse": false} },
+    { "keys": ["ctrl+shift+f3"], "command": "show_panel", "args": {"panel": "find", "reverse": true} }
 ]

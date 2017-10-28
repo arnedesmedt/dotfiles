@@ -49,13 +49,13 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vagrant bower composer npm django autojump common-aliases git-extras web-search docker sudo postgres pip screen laravel5)
+plugins=(git vagrant bower composer npm django autojump common-aliases git-extras web-search docker sudo postgres pip screen laravel5 yarn)
 
 # User configuration
 
-export PATH="/home/schoolonline/.rvm/gems/ruby-2.1.2/bin:/home/schoolonline/.rvm/gems/ruby-2.1.2@global/bin:/home/schoolonline/.rvm/rubies/ruby-2.1.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/schoolonline/.rvm/bin:/home/schoolonline/.rvm/bin:/opt/liquibase/"
+export PATH="/home/schoolonline/.rvm/gems/ruby-2.1.2/bin:/home/schoolonline/.rvm/gems/ruby-2.1.2@global/bin:/home/schoolonline/.rvm/rubies/ruby-2.1.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/schoolonline/.rvm/bin:/home/schoolonline/.rvm/bin:/opt/liquibase/:/home/schoolonline/workspace/sol20/node_modules/.bin:/home/schoolonline/workspace/sol20/vendor/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
-
+export APIARY_API_KEY="84aaaf71c025a06a9a00ba43935363e3"
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment

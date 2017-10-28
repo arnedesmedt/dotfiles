@@ -5,9 +5,11 @@
 	],
 	"installed_packages":
 	[
+		"A File Icon",
 		"AdvancedNewFile",
-		"Auto Hide Sidebar",
+		"Babel",
 		"Chmod",
+		"Diffy",
 		"Facebook Material Theme",
 		"Function Name Display",
 		"Git",
@@ -16,17 +18,21 @@
 		"Laravel 5 Snippets",
 		"Laravel Blade Highlighter",
 		"Material Theme",
+		"Oceanic Color Scheme",
 		"Origami",
 		"Package Control",
 		"PHP Getters and Setters",
 		"Phpcs",
+		"PhpDoc",
+		"Pretty JSON",
 		"ProjectManager",
 		"Puppet",
 		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SublimeLinter-php",
 		"SyncedSideBar",
-		"TrailingSpaces",
-		"zz File Icons"
+		"Vue Syntax Highlight",
+		"VueFormatter",
+		"Vuejs Complete Package"
 	]
 }
